@@ -1,0 +1,9 @@
+<resources>
+
+    <declare-styleable name="tab_menu_item">
+        <attr name="itemText" format="string" />
+        <attr name="itemTextColor" format="reference" />
+        <attr name="itemIcon" format="reference" />
+    </declare-styleable>
+
+</resources>

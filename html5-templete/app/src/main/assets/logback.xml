@@ -1,0 +1,36 @@
+<configuration>
+
+    <property name="LOG_DIR"
+        value="/storage/emulated/0/com.unitedbustech.templete/log/" />
+
+    <timestamp datePattern="yyyyMMdd" key="today" />
+
+    <appender name="logcat" class="ch.qos.logback.classic.android.LogcatAppender">
+        <encoder>
+            <pattern>%msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="base_roll_file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <lazy>true</lazy>
+        <append>true</append>
+        <file>${LOG_DIR}/base.log</file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/%d{yyyyMMdd}.log</fileNamePattern>
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <root level="TRACE">
+        <appender-ref ref="logcat" />
+        <appender-ref ref="base_roll_file" />
+    </root>
+
+    <!--<root level="INFO">-->
+    <!--<appender-ref ref="base_roll_file" />-->
+    <!--</root>-->
+
+</configuration>

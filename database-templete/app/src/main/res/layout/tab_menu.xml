@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:megatrac="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.unitedbustech.templete.view.TabMenuItem
+        android:id="@+id/first_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        megatrac:itemIcon="@drawable/tab_menu_first"
+        megatrac:itemText="Overview"
+        megatrac:itemTextColor="@drawable/tab_menu_text" />
+
+    <com.unitedbustech.templete.view.TabMenuItem
+        android:id="@+id/second_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        megatrac:itemIcon="@drawable/tab_menu_second"
+        megatrac:itemText="Schedule"
+        megatrac:itemTextColor="@drawable/tab_menu_text" />
+
+    <com.unitedbustech.templete.view.TabMenuItem
+        android:id="@+id/third_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        megatrac:itemIcon="@drawable/tab_menu_third"
+        megatrac:itemText="Alerts"
+        megatrac:itemTextColor="@drawable/tab_menu_text" />
+
+    <com.unitedbustech.templete.view.TabMenuItem
+        android:id="@+id/forth_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        megatrac:itemIcon="@drawable/tab_menu_forth"
+        megatrac:itemText="More"
+        megatrac:itemTextColor="@drawable/tab_menu_text" />
+
+</LinearLayout>
